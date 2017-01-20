@@ -4,35 +4,44 @@
 	<title>Weather</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="iconAnim.css">
 	<link rel="icon" type="image/png" href="icons/favicon.png">
 </head>
 <body>
 	<header class="page-header text-center">
-		<h1>Today's Weather</h1>
+		<h1>Weather App</h1>
 	</header>
 	<div class="container-fluid text-center mainDiv" >
 		<br>
-		<div>
-		<img id="weatherImage" width="150px"><br>
-		<span id="weatherTemp" style="font-size: 50px"></span><br>
-		<span id='weatherCondition' style="font-size: 28px"></span><br>
-		<span id="weatherLocation" style="font-size: 28px"></span><br>
-		<span id="lat" style="font-size: 15px"></span>
-		<span id="long" style="font-size: 15px"></span>
-		</div>
-		<br><br><br>
+			<div class="col-sm-6 col-xs-12">
+				<img id="weatherImage" width="175px" >
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<span id="weatherTemp" style="font-size: 50px"></span><br>
+				<span id='weatherCondition' style="font-size: 28px"></span><br>
+				<span id="weatherLocation" style="font-size: 28px"></span><br>
+				<span id="lat" style="font-size: 15px"></span>
+				<span id="long" style="font-size: 15px"></span>
+			</div>
+		<div style="padding: 30px; visibility: hidden">.</div>
 	</div>
-	<span id="test" style="display: none" ></span>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<footer class="container-fluid">
+		<span class="pull-left">&copy; Created By Talha Balaj</span>
+		<span class="pull-right">Data Provided By <a href="https://apixu.com">APIUX</a></span>
+	</footer>
+	<script
+	  src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+	  integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
+	  crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="helpers.js"></script>
 	<script type="text/javascript" src="function.js"></script>
+
 </body>
 </html>
 

@@ -5,8 +5,19 @@ html, body {
 .mainDiv {
 	background-color: #2a2a2a;
 	color:white;
-	margin-top: 0;
 }
 header {
 	margin-bottom: 0;
+}
+footer {
+	position: fixed;
+	bottom:0;
+	background-color: #2a2a2a;
+	width: 100%;
+	color:white;
+}
+footer span {
+	line-height: 20px;
+	font-size: 15px;
+	margin: 10px;
 }
