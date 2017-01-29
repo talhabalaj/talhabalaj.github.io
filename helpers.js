@@ -70,8 +70,8 @@ function MobileLocation() {
         navigator.geolocation.getCurrentPosition(function(position){
             var lat = position.coords.latitude;
    			var long = position.coords.longitude;
-			var CurrentWeatherURL =  CurrentWeatherURL(lat, long);
-			var ForecastWeatherURL =  ForecastWeatherURL(lat , long);
+			var CurrentWeatherURL =  CurrentWeather(lat, long);
+			var ForecastWeatherURL =  ForecastWeather(lat , long);
 			// Debug Mode 
 			if(DebugMode){
 				alert("Entering DebugMode");
